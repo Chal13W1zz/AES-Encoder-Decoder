@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<EditText
+		android:id="@+id/edkey"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:layout_height="wrap_content"
+		android:hint="Encryption/Decryption key"/>
+
+	<Button
+		android:id="@+id/mainButton1"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Decrypt"
+		android:onClick="dc"
+		android:layout_below="@id/edkey"/>
+
+	<Button
+		android:id="@+id/mainButton"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Encrypt"
+		android:onClick="cr"
+		android:layout_below="@id/mainButton1"/>
+
+	<TextView
+		android:id="@+id/mainTextView"
+		android:layout_below="@id/mainButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:layout_below="@id/mainTextView"
+		android:id="@+id/mainEditText1"
+		android:hint="Enter text to Encode/Decode"/>
+
+</RelativeLayout>
+
